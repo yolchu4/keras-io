@@ -519,7 +519,6 @@ embedding for each sentence, and we will calculate the `positive_dist` and
 
 class TripletSiamese(keras.Model):
     def __init__(self, encoder, **kwargs):
-
         anchor = keras.Input(shape=(1), dtype="string")
         positive = keras.Input(shape=(1), dtype="string")
         negative = keras.Input(shape=(1), dtype="string")
